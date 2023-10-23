@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-position: right;
+}
+
+.container {
+    width: 100%;
+}
+
+.box {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.tile_box {
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tile_item {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.tile_item:active {
+    transform: scale(0.9);
+}
+
+.tile_num {
+    font-size: 54px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+}
+
+.turn {
+    color: #fff;
+    font-family: 'Jura', sans-serif;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.anim {
+    animation: scale .5s ease forwards;
+}
+
+.popup {
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(99, 54, 172);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    display: none;
+}
+
+.score, .score_b {
+    font-family: 'Jura', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.controls {
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn_start {
+    display: block;
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    color: #000;
+    border: 1px solid #fff;
+    background-color: orange;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn {
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'Jura', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+    border: 1px solid #fff;
+    background-color: orange;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@keyframes scale {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.one {
+    background-color: #A7FC00;
+}
+.two {
+    background-color: #00BFFF;
+}
+.three {
+    background-color: #ff0000;
+}
+.four {
+    background-color: #FF00FF;
+}
+.five {
+    background-color: #fcf81d;
+}
+.six {
+    background-color: #0500ff;
+}

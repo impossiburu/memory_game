@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p class="turn">Готовы?</p>
+            <div class="tile_box">
+                <div class="tile_item one" data-id="1">
+                </div>
+                <div class="tile_item two" data-id="2">
+                </div>
+                <div class="tile_item three" data-id="3">
+                </div>
+                <div class="tile_item four" data-id="4">
+                </div>
+                <div class="tile_item five" data-id="5">
+                </div>
+                <div class="tile_item six" data-id="6">
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="btn_start" onclick="startGame()">Начать игру</button><br>
+            <button class="btn_start" onclick="location.reload(); return false;">Заново</button>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="score">
+            <p>
+                Лучшая комбинация: <b class="score_b"></b>
+            </p>
+        </div>
+        <div class="btn">
+            <p class="btn_ok" onclick="location.reload(); return false;">OK</p>
+        </div>
+    </div>
+    
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
